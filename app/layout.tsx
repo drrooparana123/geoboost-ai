@@ -2,7 +2,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 
 export const metadata = {
   title: "GeoBoost AI",
-  description: "AI powered platform",
+  description: "GeoBoost AI Platform"
 };
 
 export default function RootLayout({
