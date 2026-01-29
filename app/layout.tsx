@@ -1,9 +1,5 @@
 import { ClerkProvider } from "@clerk/nextjs";
-
-export const metadata = {
-  title: "GeoBoost AI",
-  description: "GeoBoost AI Platform"
-};
+import "./globals.css";
 
 export default function RootLayout({
   children,
