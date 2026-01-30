@@ -1,12 +1,10 @@
-import { currentUser } from "@clerk/nextjs";
+import { UserButton } from "@clerk/nextjs";
 
-export default async function Dashboard() {
-  const user = await currentUser();
-
+export default function Dashboard() {
   return (
-    <main style={{ padding: 40 }}>
+    <div>
       <h1>Dashboard</h1>
-      <p>Welcome {user?.firstName}</p>
-    </main>
+      <UserButton afterSignOutUrl="/" />
+    </div>
   );
 }
